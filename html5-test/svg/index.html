@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Test</title>
+    <style>
+        body{
+            min-height: 1000px;
+        }
+
+        svg{
+            display: block;
+            margin: 20px;
+            background-color: #eee;
+        }
+
+        .satu{
+            background-color: #ddd;
+            width: 300px;
+            height: 300px;
+        }
+
+        .kotak1{
+            width: 100px;
+            height: 100px;
+            fill:salmon;
+            x: 50;
+            y: 50;
+        }
+
+        .bintang{
+            background-color: transparent;
+            /* animation: putar 5s linear infinite; */
+        }
+
+        @keyframes putar{
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+     <svg class="satu" viewBox="50 50 300 300"> <!-- ukuran jendela -->
+        <rect class="kotak1" />
+    </svg>
+
+    <svg width="150" height="150">
+        <rect width="100" height="100" fill="lightblue"/>
+        <circle r="50" cx="50" cy="50" fill="salmon"/>
+        <rect width="70" height="70" x="15" y="15" fill="#333"/>
+    </svg>
+
+    <svg width = "500">
+        <path fill="none" stroke="black" 
+            d="M 60,10 L 110,90 H 10 L 60,10"/>
+
+        <path fill="none" stroke="black"
+            d="m 170,10 l 50,80 h -100 l 50,-80"/>
+    </svg>
+
+    <svg>
+        <path fill="none" stroke="red"
+            d="M 10,90 C 30,90 25,10 50,10 S 70,90 90,90"/>
+    </svg>
+
+    <svg width="266" height="253" viewBox="0 0 266 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_7_2)">
+        <path d="M133 0L163.309 93.2827L261.393 93.2827L182.042 150.935L212.351 244.217L133 186.565L53.649 244.217L83.9584 150.935L4.60738 93.2827L102.691 93.2827L133 0Z" fill="#1A9DE7" fill-opacity="0.866667" shape-rendering="crispEdges"/>
+        <path d="M133 9.70819L160.456 94.2097L161.13 96.2827H163.309L252.16 96.2827L180.278 148.508L178.515 149.789L179.188 151.862L206.645 236.363L134.763 184.138L133 182.857L131.237 184.138L59.3553 236.363L86.8115 151.862L87.4851 149.789L85.7217 148.508L13.8404 96.2827L102.691 96.2827H104.87L105.544 94.2097L133 9.70819Z" stroke="black" stroke-width="6" shape-rendering="crispEdges"/>
+        </g>
+        <defs>
+            <filter id="filter0_d_7_2" x="0.607361" y="0" width="264.785" height="252.217" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7_2"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7_2" result="shape"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <svg width="258" height="245" viewBox="0 0 258 245" fill="none" xmlns="http://www.w3.org/2000/svg" class="bintang">
+        <path d="M129 9.70819L156.456 94.2097L157.13 96.2827H159.309L248.16 96.2827L176.278 148.508L174.515 149.789L175.188 151.862L202.645 236.363L130.763 184.138L129 182.857L127.237 184.138L55.3553 236.363L82.8115 151.862L83.4851 149.789L81.7217 148.508L9.84042 96.2827L98.6906 96.2827H100.87L101.544 94.2097L129 9.70819Z" fill="#1A9DE7" fill-opacity="0.866667" stroke="black" stroke-width="6"/>
+    </svg>
+        
+    <img src="car-lamborgini.svg" alt="Image SVG" width="400">
+</body>
+</html>
